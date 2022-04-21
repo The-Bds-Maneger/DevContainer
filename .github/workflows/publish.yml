@@ -64,5 +64,3 @@ jobs:
           push: true
           tags: ghcr.io/the-bds-maneger/devcontainer_nodejs:latest
           platforms: linux/arm64,linux/amd64
-          cache-from: type=gha,scope=${{ github.ref }}_${{ github.repo }}
-          cache-to: type=gha,mode=max,scope=${{ github.ref }}_${{ github.repo }}
