@@ -1,0 +1,16 @@
+{
+  "name": "devContainerBds",
+  "image": "ghcr.io/the-bds-maneger/devcontainer_base",
+  "remoteUser": "devcontainer",
+  "containerUser": "devcontainer",
+  "updateRemoteUserUID": false,
+  "postStartCommand": "screen -dm sudo startDocker",
+  "runArgs": [
+    "--init",
+    "--privileged"
+  ],
+  "mounts": [
+    "type=tmpfs,destination=/var/lib/docker"
+  ],
+  "extensions": []
+}
